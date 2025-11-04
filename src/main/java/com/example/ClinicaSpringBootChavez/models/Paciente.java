@@ -26,9 +26,8 @@ public class Paciente {
     private String password;
 
     // Genero al esclavo
-    @OneToOne(mappedBy = "patient")
+    @OneToOne(mappedBy = "pk_patient")
     private HistoriaClinica medicalRecord;
-
 
     // Constructor vacio
     public Paciente() {
